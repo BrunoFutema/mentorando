@@ -31,6 +31,26 @@ class FakeUsersRepository implements IUsersRepository {
 
     return user;
   }
+
+  public async find(): Promise<User[]> {
+    throw new Error('Method not implemented.');
+  }
+
+  public async findById(id: string): Promise<User | undefined> {
+    throw new Error('Method not implemented.');
+  }
+
+  public async findByIds(ids: string[]): Promise<User[]> {
+    throw new Error('Method not implemented.');
+  }
+
+  public async findByUsername(username: string): Promise<User | undefined> {
+    throw new Error('Method not implemented.');
+  }
+
+  public async delete(id: string): Promise<void> {
+    throw new Error('Method not implemented.');
+  }
 }
 
 export default FakeUsersRepository;
